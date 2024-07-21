@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://www.grupoinhaut.com")
 public class ChatBotController {
 
     @Autowired
     private MailService mailService;
 
+    @CrossOrigin(origins = "https://www.grupoinhaut.com")
     @PostMapping("/user-data")
     public void receiveUserData (@RequestBody UserModel user){
         mailService.sendEmail(user);
