@@ -1,4 +1,6 @@
 com\example\demo\UserModel.class
+com\example\demo\config\WebConfig.class
 com\example\demo\ChatBotController.class
+com\example\demo\config\WebConfig$1.class
 com\example\demo\ChatbotBackendApplication.class
 com\example\demo\MailService.class
