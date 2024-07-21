@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://www.grupoinhaut.com")
+@CrossOrigin(origins = "http://www.grupoinhaut.com")
 public class ChatBotController {
 
     @Autowired
