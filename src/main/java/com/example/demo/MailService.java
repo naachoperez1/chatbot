@@ -13,7 +13,7 @@ public class MailService {
 
     public void sendEmail(UserModel userModel) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo("arquilarisaaimar@hotmail.com");
+        message.setTo("naachoperez1@hotmail.com");
         message.setSubject("Nuevo contacto del chatbot");
         message.setText("Comunicarse con: " + userModel.getNombre() + ",\n"
                 + "Teléfono: " + userModel.getTelefono() + ",\n"
