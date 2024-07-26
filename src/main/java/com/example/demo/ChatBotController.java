@@ -10,7 +10,7 @@ public class ChatBotController {
     @Autowired
     private MailService mailService;
 
-    @CrossOrigin(origins = "https://www.grupoinhaut.com")
+    @CrossOrigin(origins = "*")
     @PostMapping("/user-data")
     public void receiveUserData (@RequestBody UserModel user){
         mailService.sendEmail(user);
