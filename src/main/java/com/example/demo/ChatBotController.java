@@ -12,7 +12,7 @@ public class ChatBotController {
     @Autowired
     private MailService mailService;
 
-    @CrossOrigin(origins = "https://www.grupoinhaut.com")
+//    @CrossOrigin(origins = "https://www.grupoinhaut.com")
     @PostMapping("/user-data")
     public ResponseEntity<String> receiveUserData (@RequestBody UserModel user){
         HttpHeaders headers = new HttpHeaders();
