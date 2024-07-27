@@ -18,6 +18,7 @@ public class WebConfig implements WebMvcConfigurer {
 //                        .allowedOrigins("https://www.grupoinhaut.com")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD")
                         .allowedHeaders("*")
+                        .allowedOrigins("*")
                         .allowCredentials(true);
             }
         };

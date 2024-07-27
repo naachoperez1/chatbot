@@ -14,17 +14,17 @@ public class ChatBotController {
 
 //    @CrossOrigin(origins = "https://www.grupoinhaut.com")
     @PostMapping("/user-data")
-    public ResponseEntity<String> receiveUserData (@RequestBody UserModel user){
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Cache-Control", "no-cache, no-store, must-revalidate");
-        headers.add("Pragma", "no-cache");
-        headers.add("Expires", "0");
-        headers.add("Access-Control-Allow-Origin", "https://www.grupoinhaut.com");
-        headers.add("Access-Control-Allow-Credentials", "true");
-        headers.add("Vary", "Origin");
+    public void receiveUserData (@RequestBody UserModel user){
+//        HttpHeaders headers = new HttpHeaders();
+//        headers.add("Cache-Control", "no-cache, no-store, must-revalidate");
+//        headers.add("Pragma", "no-cache");
+//        headers.add("Expires", "0");
+//        headers.add("Access-Control-Allow-Origin", "https://www.grupoinhaut.com");
+//        headers.add("Access-Control-Allow-Credentials", "true");
+//        headers.add("Vary", "Origin");
 
         mailService.sendEmail(user);
 
-        return ResponseEntity.ok().headers(headers).body("Mensaje recibido");
+//        return ResponseEntity.ok().headers(headers).body("Mensaje recibido");
     }
 }
